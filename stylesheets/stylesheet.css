@@ -104,9 +104,10 @@ p {
   margin: 10px 0 15px 0;
 }
 
-footer p {
+footer {
   color: #f2f2f2;
 }
+
 
 a {
   text-decoration: none;
@@ -133,6 +134,21 @@ a {
 footer a:hover {
   color: #43adff;
   text-shadow: #0090ff 0px 0px 2px;
+}
+
+footer .copyright {
+  float: right;
+}
+
+footer ul {
+  margin: 0;
+}
+
+footer ul li {
+  float: left;
+  margin: 0 20px 0 0;
+  padding: 0;
+  list-style-type: none
 }
 
 em {
@@ -272,20 +288,21 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 640px;
+  max-width: 924px;
   padding: 20px 10px;
   margin: 0 auto;
 }
 
-#forkme_banner {
+#berlin_banner {
   display: block;
   position: absolute;
   top:0;
-  right: 10px;
+  right: 0;
   z-index: 10;
-  padding: 10px 50px 10px 10px;
+  padding: 10px 10px 10px 30px;
   color: #fff;
-  background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
+  /*background: #0090ff;*/
+  background: url('../images/berlin-logo.png') #0090ff no-repeat 5% 45%;
   font-weight: 700;
   box-shadow: 0 0 10px rgba(0,0,0,.5);
   border-bottom-left-radius: 2px;
@@ -302,7 +319,7 @@ Full-Width Styles
 }
 
 #header_wrap .inner {
-  padding: 50px 10px 30px 10px;
+  padding: 10px 10px;
 }
 
 #project_title {
@@ -361,13 +378,15 @@ Full-Width Styles
 }
 
 #main_content_wrap {
-  background: #f2f2f2;
+  background: url(../images/background.png) no-repeat top center #fefefe;
+  background-size: 100%;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111;
 }
 
 #main_content {
-  padding-top: 40px;
+  padding-top: 30px;
+  min-height: 450px;
 }
 
 #footer_wrap {
